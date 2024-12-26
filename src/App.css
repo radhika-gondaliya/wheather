@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #87ceeb, #4682b4);
+  color: #333;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container */
+.App {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading */
+h1 {
+  color: #4682b4;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 1rem;
+  border: 2px solid #4682b4;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #87ceeb;
+  box-shadow: 0 0 5px #87ceeb;
+}
+
+/* Submit Button */
+button.submit {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 1rem;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.submit:hover {
+  background-color: #87ceeb;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Weather Information */
+.information {
+  background-color: #abbbc8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.information p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.information p:first-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .App {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 65%;
+  }
+
+  button.submit {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .information p {
+    font-size: 1rem;
+  }
+}
